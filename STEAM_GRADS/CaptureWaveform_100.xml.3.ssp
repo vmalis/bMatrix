@@ -1,0 +1,1874 @@
+
+
+TIME: 0(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       5FC    ** Unknown opcode
+DAT       600  ** Expecting an opcode
+OPC       444    Digital receiver ADC
+DAT       600      DATA BYTE 0
+OPC       416    Exctr unblank register
+DAT       600          DATA BYTE 0
+DVC       201  End packet + EOW
+
+
+TIME: 8(us)  PERIOD: 1
+INST:     8000  Scope trigger
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 9(us)  PERIOD: 15
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 24(us)  PERIOD: 4
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 28(us)  PERIOD: 384
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 412(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       410    Offset freq (OMEGA) reg
+DAT       600      DATA BYTE 2 (0x 0)  (=0)
+DAT       600      DATA BYTE 1 (0x 0)  (=0)
+DAT       600      DATA BYTE 0 (0x 0)  (=0)
+OPC       406    THETA (phase) register
+DAT       600      DATA BYTE 1 (0x 0)  (=0)
+DAT       600      DATA BYTE 0 (0x 0)  (=0)
+OPC       416    Exctr unblank register
+DAT       780      Offset freq phase reset + SSP Lock flag
+OPC       448    Receiver unblank
+DAT       600      DATA BYTE 0 (0x 0)  (=0)
+DVC       200  End packet
+DVC       201  End packet + EOW
+
+
+TIME: 426(us)  PERIOD: 50
+INST:    12000  Unblank1 + RFunblank1
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 476(us)  PERIOD: 9720
+INST:    12000  Unblank1 + RFunblank1
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 10196(us)  PERIOD: 50
+INST:    12000  Unblank1 + RFunblank1
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 10246(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       448    Receiver unblank
+DAT       600      DATA BYTE 0 (0x 0)  (=0)
+DVC       201  End packet + EOW
+
+
+TIME: 10250(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       202  DAB or CAP Device
+OPC       40C    DHYPER
+DAT       600      DATA BYTE  1 (0x 0)  Echo number
+DAT       600      DATA BYTE  2 (0x 0)  Dab operation
+DAT       602      DATA BYTE  3 (0x 1)  Card repeat
+DAT       602      DATA BYTE  4 (0x 1)  Frame flipping mode
+DAT       600      DATA BYTE  5 (0x 0)  Slice number BYTE 1
+DAT       600      DATA BYTE  6 (0x 0)  Slice number BYTE 0
+DAT       600      DATA BYTE  7 (0x 0)  Start view nbr BYTE 1
+DAT       648      DATA BYTE  8 (0x24)  Start view nbr BYTE 0
+DAT       7FE      DATA BYTE  9 (0xFF)  View skip BYTE 1
+DAT       7FE      DATA BYTE 10 (0xFF)  View skip BYTE 0
+DAT       600      DATA BYTE 11 (0x 0)  Number of views BYTE 1
+DAT       648      DATA BYTE 12 (0x24)  Number of views BYTE 0
+DVC       210  Master Exc/Rec
+OPC       442    Digital filter select
+DAT       600      Digital filter 0
+DVC       201  End packet + EOW
+
+
+TIME: 10268(us)  PERIOD: 12952
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 23220(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       410    Offset freq (OMEGA) reg
+DAT       600      DATA BYTE 2 (0x 0)  (=0)
+DAT       600      DATA BYTE 1 (0x 0)  (=0)
+DAT       600      DATA BYTE 0 (0x 0)  (=0)
+OPC       406    THETA (phase) register
+DAT       600      DATA BYTE 1 (0x 0)  (=0)
+DAT       600      DATA BYTE 0 (0x 0)  (=0)
+OPC       416    Exctr unblank register
+DAT       680      Offset freq phase reset
+OPC       448    Receiver unblank
+DAT       600      DATA BYTE 0 (0x 0)  (=0)
+DVC       200  End packet
+DVC       201  End packet + EOW
+
+
+TIME: 23234(us)  PERIOD: 50
+INST:    12000  Unblank1 + RFunblank1
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 23284(us)  PERIOD: 3200
+INST:    12000  Unblank1 + RFunblank1
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 26484(us)  PERIOD: 50
+INST:    12000  Unblank1 + RFunblank1
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 26534(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       448    Receiver unblank
+DAT       600      DATA BYTE 0 (0x 0)  (=0)
+DVC       201  End packet + EOW
+
+
+TIME: 26538(us)  PERIOD: 90290
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 116828(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       410    Offset freq (OMEGA) reg
+DAT       600      DATA BYTE 2 (0x 0)  (=0)
+DAT       600      DATA BYTE 1 (0x 0)  (=0)
+DAT       600      DATA BYTE 0 (0x 0)  (=0)
+OPC       406    THETA (phase) register
+DAT       600      DATA BYTE 1 (0x 0)  (=0)
+DAT       600      DATA BYTE 0 (0x 0)  (=0)
+OPC       416    Exctr unblank register
+DAT       780      Offset freq phase reset + SSP Lock flag
+OPC       448    Receiver unblank
+DAT       600      DATA BYTE 0 (0x 0)  (=0)
+DVC       200  End packet
+DVC       201  End packet + EOW
+
+
+TIME: 116842(us)  PERIOD: 50
+INST:    12000  Unblank1 + RFunblank1
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 116892(us)  PERIOD: 3200
+INST:    12000  Unblank1 + RFunblank1
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 120092(us)  PERIOD: 50
+INST:    12000  Unblank1 + RFunblank1
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 120142(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       448    Receiver unblank
+DAT       600      DATA BYTE 0 (0x 0)  (=0)
+DVC       201  End packet + EOW
+
+
+TIME: 120146(us)  PERIOD: 600
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 120746(us)  PERIOD: 4
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 120750(us)  PERIOD: 4
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 120754(us)  PERIOD: 6700
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 127454(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       448    Receiver unblank
+DAT       7FE      DATA BYTE 0 (0xFF)  (=255)
+DVC       201  End packet + EOW
+
+
+TIME: 127458(us)  PERIOD: 96
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 127554(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       410    Offset freq (OMEGA) reg
+DAT       600      DATA BYTE 2 (0x 0)  (=0)
+DAT       600      DATA BYTE 1 (0x 0)  (=0)
+DAT       600      DATA BYTE 0 (0x 0)  (=0)
+OPC       406    THETA (phase) register
+DAT       798      DATA BYTE 1 (0xCC)  (=52224)
+DAT       720      DATA BYTE 0 (0x90)  (=144)
+OPC       416    Exctr unblank register
+DAT       680      Offset freq phase reset
+OPC       442    Digital filter select
+DAT       600      Digital filter 0
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+DVC       201  End packet + EOW
+
+
+TIME: 127571(us)  PERIOD: 35
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 127606(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       444    Digital receiver ADC
+DAT       610      Start of acquisition
+DVC       201  End packet + EOW
+
+
+TIME: 127610(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       5FE    DABOUT register
+DAT       604      DATA BYTE 0 (0x 2)  (=2)
+DVC       201  End packet + EOW
+
+
+TIME: 127614(us)  PERIOD: 536
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 128150(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       410    Offset freq (OMEGA) reg
+DAT       600      DATA BYTE 2 (0x 0)  (=0)
+DAT       600      DATA BYTE 1 (0x 0)  (=0)
+DAT       600      DATA BYTE 0 (0x 0)  (=0)
+OPC       406    THETA (phase) register
+DAT       74E      DATA BYTE 1 (0xA7)  (=42752)
+DAT       780      DATA BYTE 0 (0xC0)  (=192)
+OPC       416    Exctr unblank register
+DAT       680      Offset freq phase reset
+OPC       442    Digital filter select
+DAT       600      Digital filter 0
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+DVC       201  End packet + EOW
+
+
+TIME: 128167(us)  PERIOD: 35
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 128202(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       444    Digital receiver ADC
+DAT       610      Start of acquisition
+DVC       201  End packet + EOW
+
+
+TIME: 128206(us)  PERIOD: 540
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 128746(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       410    Offset freq (OMEGA) reg
+DAT       600      DATA BYTE 2 (0x 0)  (=0)
+DAT       600      DATA BYTE 1 (0x 0)  (=0)
+DAT       600      DATA BYTE 0 (0x 0)  (=0)
+OPC       406    THETA (phase) register
+DAT       600      DATA BYTE 1 (0x 0)  (=0)
+DAT       720      DATA BYTE 0 (0x90)  (=144)
+OPC       416    Exctr unblank register
+DAT       680      Offset freq phase reset
+OPC       442    Digital filter select
+DAT       600      Digital filter 0
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+DVC       201  End packet + EOW
+
+
+TIME: 128763(us)  PERIOD: 35
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 128798(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       444    Digital receiver ADC
+DAT       610      Start of acquisition
+DVC       201  End packet + EOW
+
+
+TIME: 128802(us)  PERIOD: 540
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 129342(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       410    Offset freq (OMEGA) reg
+DAT       600      DATA BYTE 2 (0x 0)  (=0)
+DAT       600      DATA BYTE 1 (0x 0)  (=0)
+DAT       600      DATA BYTE 0 (0x 0)  (=0)
+OPC       406    THETA (phase) register
+DAT       7B6      DATA BYTE 1 (0xDB)  (=56064)
+DAT       780      DATA BYTE 0 (0xC0)  (=192)
+OPC       416    Exctr unblank register
+DAT       680      Offset freq phase reset
+OPC       442    Digital filter select
+DAT       600      Digital filter 0
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+DVC       201  End packet + EOW
+
+
+TIME: 129359(us)  PERIOD: 35
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 129394(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       444    Digital receiver ADC
+DAT       610      Start of acquisition
+DVC       201  End packet + EOW
+
+
+TIME: 129398(us)  PERIOD: 540
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 129938(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       410    Offset freq (OMEGA) reg
+DAT       600      DATA BYTE 2 (0x 0)  (=0)
+DAT       600      DATA BYTE 1 (0x 0)  (=0)
+DAT       600      DATA BYTE 0 (0x 0)  (=0)
+OPC       406    THETA (phase) register
+DAT       668      DATA BYTE 1 (0x34)  (=13312)
+DAT       700      DATA BYTE 0 (0x80)  (=128)
+OPC       416    Exctr unblank register
+DAT       680      Offset freq phase reset
+OPC       442    Digital filter select
+DAT       600      Digital filter 0
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+DVC       201  End packet + EOW
+
+
+TIME: 129955(us)  PERIOD: 35
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 129990(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       444    Digital receiver ADC
+DAT       610      Start of acquisition
+DVC       201  End packet + EOW
+
+
+TIME: 129994(us)  PERIOD: 540
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 130534(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       410    Offset freq (OMEGA) reg
+DAT       600      DATA BYTE 2 (0x 0)  (=0)
+DAT       600      DATA BYTE 1 (0x 0)  (=0)
+DAT       600      DATA BYTE 0 (0x 0)  (=0)
+OPC       406    THETA (phase) register
+DAT       61E      DATA BYTE 1 (0x F)  (=3840)
+DAT       760      DATA BYTE 0 (0xB0)  (=176)
+OPC       416    Exctr unblank register
+DAT       680      Offset freq phase reset
+OPC       442    Digital filter select
+DAT       600      Digital filter 0
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+DVC       201  End packet + EOW
+
+
+TIME: 130551(us)  PERIOD: 35
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 130586(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       444    Digital receiver ADC
+DAT       610      Start of acquisition
+DVC       201  End packet + EOW
+
+
+TIME: 130590(us)  PERIOD: 540
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 131130(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       410    Offset freq (OMEGA) reg
+DAT       600      DATA BYTE 2 (0x 0)  (=0)
+DAT       600      DATA BYTE 1 (0x 0)  (=0)
+DAT       600      DATA BYTE 0 (0x 0)  (=0)
+OPC       406    THETA (phase) register
+DAT       6D0      DATA BYTE 1 (0x68)  (=26624)
+DAT       700      DATA BYTE 0 (0x80)  (=128)
+OPC       416    Exctr unblank register
+DAT       680      Offset freq phase reset
+OPC       442    Digital filter select
+DAT       600      Digital filter 0
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+DVC       201  End packet + EOW
+
+
+TIME: 131147(us)  PERIOD: 35
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 131182(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       444    Digital receiver ADC
+DAT       610      Start of acquisition
+DVC       201  End packet + EOW
+
+
+TIME: 131186(us)  PERIOD: 540
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 131726(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       410    Offset freq (OMEGA) reg
+DAT       600      DATA BYTE 2 (0x 0)  (=0)
+DAT       600      DATA BYTE 1 (0x 0)  (=0)
+DAT       600      DATA BYTE 0 (0x 0)  (=0)
+OPC       406    THETA (phase) register
+DAT       686      DATA BYTE 1 (0x43)  (=17152)
+DAT       760      DATA BYTE 0 (0xB0)  (=176)
+OPC       416    Exctr unblank register
+DAT       680      Offset freq phase reset
+OPC       442    Digital filter select
+DAT       600      Digital filter 0
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+DVC       201  End packet + EOW
+
+
+TIME: 131743(us)  PERIOD: 35
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 131778(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       444    Digital receiver ADC
+DAT       610      Start of acquisition
+DVC       201  End packet + EOW
+
+
+TIME: 131782(us)  PERIOD: 540
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 132322(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       410    Offset freq (OMEGA) reg
+DAT       600      DATA BYTE 2 (0x 0)  (=0)
+DAT       600      DATA BYTE 1 (0x 0)  (=0)
+DAT       600      DATA BYTE 0 (0x 0)  (=0)
+OPC       406    THETA (phase) register
+DAT       738      DATA BYTE 1 (0x9C)  (=39936)
+DAT       700      DATA BYTE 0 (0x80)  (=128)
+OPC       416    Exctr unblank register
+DAT       680      Offset freq phase reset
+OPC       442    Digital filter select
+DAT       600      Digital filter 0
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+DVC       201  End packet + EOW
+
+
+TIME: 132339(us)  PERIOD: 35
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 132374(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       444    Digital receiver ADC
+DAT       610      Start of acquisition
+DVC       201  End packet + EOW
+
+
+TIME: 132378(us)  PERIOD: 540
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 132918(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       410    Offset freq (OMEGA) reg
+DAT       600      DATA BYTE 2 (0x 0)  (=0)
+DAT       600      DATA BYTE 1 (0x 0)  (=0)
+DAT       600      DATA BYTE 0 (0x 0)  (=0)
+OPC       406    THETA (phase) register
+DAT       6EE      DATA BYTE 1 (0x77)  (=30464)
+DAT       760      DATA BYTE 0 (0xB0)  (=176)
+OPC       416    Exctr unblank register
+DAT       680      Offset freq phase reset
+OPC       442    Digital filter select
+DAT       600      Digital filter 0
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+DVC       201  End packet + EOW
+
+
+TIME: 132935(us)  PERIOD: 35
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 132970(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       444    Digital receiver ADC
+DAT       610      Start of acquisition
+DVC       201  End packet + EOW
+
+
+TIME: 132974(us)  PERIOD: 540
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 133514(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       410    Offset freq (OMEGA) reg
+DAT       600      DATA BYTE 2 (0x 0)  (=0)
+DAT       600      DATA BYTE 1 (0x 0)  (=0)
+DAT       600      DATA BYTE 0 (0x 0)  (=0)
+OPC       406    THETA (phase) register
+DAT       7A0      DATA BYTE 1 (0xD0)  (=53248)
+DAT       6E0      DATA BYTE 0 (0x70)  (=112)
+OPC       416    Exctr unblank register
+DAT       680      Offset freq phase reset
+OPC       442    Digital filter select
+DAT       600      Digital filter 0
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+DVC       201  End packet + EOW
+
+
+TIME: 133531(us)  PERIOD: 35
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 133566(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       444    Digital receiver ADC
+DAT       610      Start of acquisition
+DVC       201  End packet + EOW
+
+
+TIME: 133570(us)  PERIOD: 540
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 134110(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       410    Offset freq (OMEGA) reg
+DAT       600      DATA BYTE 2 (0x 0)  (=0)
+DAT       600      DATA BYTE 1 (0x 0)  (=0)
+DAT       600      DATA BYTE 0 (0x 0)  (=0)
+OPC       406    THETA (phase) register
+DAT       756      DATA BYTE 1 (0xAB)  (=43776)
+DAT       740      DATA BYTE 0 (0xA0)  (=160)
+OPC       416    Exctr unblank register
+DAT       680      Offset freq phase reset
+OPC       442    Digital filter select
+DAT       600      Digital filter 0
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+DVC       201  End packet + EOW
+
+
+TIME: 134127(us)  PERIOD: 35
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 134162(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       444    Digital receiver ADC
+DAT       610      Start of acquisition
+DVC       201  End packet + EOW
+
+
+TIME: 134166(us)  PERIOD: 540
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 134706(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       410    Offset freq (OMEGA) reg
+DAT       600      DATA BYTE 2 (0x 0)  (=0)
+DAT       600      DATA BYTE 1 (0x 0)  (=0)
+DAT       600      DATA BYTE 0 (0x 0)  (=0)
+OPC       406    THETA (phase) register
+DAT       608      DATA BYTE 1 (0x 4)  (=1024)
+DAT       6E0      DATA BYTE 0 (0x70)  (=112)
+OPC       416    Exctr unblank register
+DAT       680      Offset freq phase reset
+OPC       442    Digital filter select
+DAT       600      Digital filter 0
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+DVC       201  End packet + EOW
+
+
+TIME: 134723(us)  PERIOD: 35
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 134758(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       444    Digital receiver ADC
+DAT       610      Start of acquisition
+DVC       201  End packet + EOW
+
+
+TIME: 134762(us)  PERIOD: 540
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 135302(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       410    Offset freq (OMEGA) reg
+DAT       600      DATA BYTE 2 (0x 0)  (=0)
+DAT       600      DATA BYTE 1 (0x 0)  (=0)
+DAT       600      DATA BYTE 0 (0x 0)  (=0)
+OPC       406    THETA (phase) register
+DAT       7BE      DATA BYTE 1 (0xDF)  (=57088)
+DAT       740      DATA BYTE 0 (0xA0)  (=160)
+OPC       416    Exctr unblank register
+DAT       680      Offset freq phase reset
+OPC       442    Digital filter select
+DAT       600      Digital filter 0
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+DVC       201  End packet + EOW
+
+
+TIME: 135319(us)  PERIOD: 35
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 135354(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       444    Digital receiver ADC
+DAT       610      Start of acquisition
+DVC       201  End packet + EOW
+
+
+TIME: 135358(us)  PERIOD: 540
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 135898(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       410    Offset freq (OMEGA) reg
+DAT       600      DATA BYTE 2 (0x 0)  (=0)
+DAT       600      DATA BYTE 1 (0x 0)  (=0)
+DAT       600      DATA BYTE 0 (0x 0)  (=0)
+OPC       406    THETA (phase) register
+DAT       670      DATA BYTE 1 (0x38)  (=14336)
+DAT       6E0      DATA BYTE 0 (0x70)  (=112)
+OPC       416    Exctr unblank register
+DAT       680      Offset freq phase reset
+OPC       442    Digital filter select
+DAT       600      Digital filter 0
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+DVC       201  End packet + EOW
+
+
+TIME: 135915(us)  PERIOD: 35
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 135950(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       444    Digital receiver ADC
+DAT       610      Start of acquisition
+DVC       201  End packet + EOW
+
+
+TIME: 135954(us)  PERIOD: 540
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 136494(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       410    Offset freq (OMEGA) reg
+DAT       600      DATA BYTE 2 (0x 0)  (=0)
+DAT       600      DATA BYTE 1 (0x 0)  (=0)
+DAT       600      DATA BYTE 0 (0x 0)  (=0)
+OPC       406    THETA (phase) register
+DAT       626      DATA BYTE 1 (0x13)  (=4864)
+DAT       740      DATA BYTE 0 (0xA0)  (=160)
+OPC       416    Exctr unblank register
+DAT       680      Offset freq phase reset
+OPC       442    Digital filter select
+DAT       600      Digital filter 0
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+DVC       201  End packet + EOW
+
+
+TIME: 136511(us)  PERIOD: 35
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 136546(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       444    Digital receiver ADC
+DAT       610      Start of acquisition
+DVC       201  End packet + EOW
+
+
+TIME: 136550(us)  PERIOD: 540
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 137090(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       410    Offset freq (OMEGA) reg
+DAT       600      DATA BYTE 2 (0x 0)  (=0)
+DAT       600      DATA BYTE 1 (0x 0)  (=0)
+DAT       600      DATA BYTE 0 (0x 0)  (=0)
+OPC       406    THETA (phase) register
+DAT       6D8      DATA BYTE 1 (0x6C)  (=27648)
+DAT       6C0      DATA BYTE 0 (0x60)  (=96)
+OPC       416    Exctr unblank register
+DAT       680      Offset freq phase reset
+OPC       442    Digital filter select
+DAT       600      Digital filter 0
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+DVC       201  End packet + EOW
+
+
+TIME: 137107(us)  PERIOD: 35
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 137142(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       444    Digital receiver ADC
+DAT       610      Start of acquisition
+DVC       201  End packet + EOW
+
+
+TIME: 137146(us)  PERIOD: 540
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 137686(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       410    Offset freq (OMEGA) reg
+DAT       600      DATA BYTE 2 (0x 0)  (=0)
+DAT       600      DATA BYTE 1 (0x 0)  (=0)
+DAT       600      DATA BYTE 0 (0x 0)  (=0)
+OPC       406    THETA (phase) register
+DAT       68E      DATA BYTE 1 (0x47)  (=18176)
+DAT       720      DATA BYTE 0 (0x90)  (=144)
+OPC       416    Exctr unblank register
+DAT       680      Offset freq phase reset
+OPC       442    Digital filter select
+DAT       600      Digital filter 0
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+DVC       201  End packet + EOW
+
+
+TIME: 137703(us)  PERIOD: 35
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 137738(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       444    Digital receiver ADC
+DAT       610      Start of acquisition
+DVC       201  End packet + EOW
+
+
+TIME: 137742(us)  PERIOD: 540
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 138282(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       410    Offset freq (OMEGA) reg
+DAT       600      DATA BYTE 2 (0x 0)  (=0)
+DAT       600      DATA BYTE 1 (0x 0)  (=0)
+DAT       600      DATA BYTE 0 (0x 0)  (=0)
+OPC       406    THETA (phase) register
+DAT       740      DATA BYTE 1 (0xA0)  (=40960)
+DAT       6C0      DATA BYTE 0 (0x60)  (=96)
+OPC       416    Exctr unblank register
+DAT       680      Offset freq phase reset
+OPC       442    Digital filter select
+DAT       600      Digital filter 0
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+DVC       201  End packet + EOW
+
+
+TIME: 138299(us)  PERIOD: 35
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 138334(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       444    Digital receiver ADC
+DAT       610      Start of acquisition
+DVC       201  End packet + EOW
+
+
+TIME: 138338(us)  PERIOD: 540
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 138878(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       410    Offset freq (OMEGA) reg
+DAT       600      DATA BYTE 2 (0x 0)  (=0)
+DAT       600      DATA BYTE 1 (0x 0)  (=0)
+DAT       600      DATA BYTE 0 (0x 0)  (=0)
+OPC       406    THETA (phase) register
+DAT       6F6      DATA BYTE 1 (0x7B)  (=31488)
+DAT       720      DATA BYTE 0 (0x90)  (=144)
+OPC       416    Exctr unblank register
+DAT       680      Offset freq phase reset
+OPC       442    Digital filter select
+DAT       600      Digital filter 0
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+DVC       201  End packet + EOW
+
+
+TIME: 138895(us)  PERIOD: 35
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 138930(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       444    Digital receiver ADC
+DAT       610      Start of acquisition
+DVC       201  End packet + EOW
+
+
+TIME: 138934(us)  PERIOD: 540
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 139474(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       410    Offset freq (OMEGA) reg
+DAT       600      DATA BYTE 2 (0x 0)  (=0)
+DAT       600      DATA BYTE 1 (0x 0)  (=0)
+DAT       600      DATA BYTE 0 (0x 0)  (=0)
+OPC       406    THETA (phase) register
+DAT       7A8      DATA BYTE 1 (0xD4)  (=54272)
+DAT       6C0      DATA BYTE 0 (0x60)  (=96)
+OPC       416    Exctr unblank register
+DAT       680      Offset freq phase reset
+OPC       442    Digital filter select
+DAT       600      Digital filter 0
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+DVC       201  End packet + EOW
+
+
+TIME: 139491(us)  PERIOD: 35
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 139526(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       444    Digital receiver ADC
+DAT       610      Start of acquisition
+DVC       201  End packet + EOW
+
+
+TIME: 139530(us)  PERIOD: 540
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 140070(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       410    Offset freq (OMEGA) reg
+DAT       600      DATA BYTE 2 (0x 0)  (=0)
+DAT       600      DATA BYTE 1 (0x 0)  (=0)
+DAT       600      DATA BYTE 0 (0x 0)  (=0)
+OPC       406    THETA (phase) register
+DAT       75E      DATA BYTE 1 (0xAF)  (=44800)
+DAT       720      DATA BYTE 0 (0x90)  (=144)
+OPC       416    Exctr unblank register
+DAT       680      Offset freq phase reset
+OPC       442    Digital filter select
+DAT       600      Digital filter 0
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+DVC       201  End packet + EOW
+
+
+TIME: 140087(us)  PERIOD: 35
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 140122(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       444    Digital receiver ADC
+DAT       610      Start of acquisition
+DVC       201  End packet + EOW
+
+
+TIME: 140126(us)  PERIOD: 540
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 140666(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       410    Offset freq (OMEGA) reg
+DAT       600      DATA BYTE 2 (0x 0)  (=0)
+DAT       600      DATA BYTE 1 (0x 0)  (=0)
+DAT       600      DATA BYTE 0 (0x 0)  (=0)
+OPC       406    THETA (phase) register
+DAT       610      DATA BYTE 1 (0x 8)  (=2048)
+DAT       6A0      DATA BYTE 0 (0x50)  (=80)
+OPC       416    Exctr unblank register
+DAT       680      Offset freq phase reset
+OPC       442    Digital filter select
+DAT       600      Digital filter 0
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+DVC       201  End packet + EOW
+
+
+TIME: 140683(us)  PERIOD: 35
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 140718(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       444    Digital receiver ADC
+DAT       610      Start of acquisition
+DVC       201  End packet + EOW
+
+
+TIME: 140722(us)  PERIOD: 540
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 141262(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       410    Offset freq (OMEGA) reg
+DAT       600      DATA BYTE 2 (0x 0)  (=0)
+DAT       600      DATA BYTE 1 (0x 0)  (=0)
+DAT       600      DATA BYTE 0 (0x 0)  (=0)
+OPC       406    THETA (phase) register
+DAT       7C6      DATA BYTE 1 (0xE3)  (=58112)
+DAT       700      DATA BYTE 0 (0x80)  (=128)
+OPC       416    Exctr unblank register
+DAT       680      Offset freq phase reset
+OPC       442    Digital filter select
+DAT       600      Digital filter 0
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+DVC       201  End packet + EOW
+
+
+TIME: 141279(us)  PERIOD: 35
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 141314(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       444    Digital receiver ADC
+DAT       610      Start of acquisition
+DVC       201  End packet + EOW
+
+
+TIME: 141318(us)  PERIOD: 540
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 141858(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       410    Offset freq (OMEGA) reg
+DAT       600      DATA BYTE 2 (0x 0)  (=0)
+DAT       600      DATA BYTE 1 (0x 0)  (=0)
+DAT       600      DATA BYTE 0 (0x 0)  (=0)
+OPC       406    THETA (phase) register
+DAT       678      DATA BYTE 1 (0x3C)  (=15360)
+DAT       6A0      DATA BYTE 0 (0x50)  (=80)
+OPC       416    Exctr unblank register
+DAT       680      Offset freq phase reset
+OPC       442    Digital filter select
+DAT       600      Digital filter 0
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+DVC       201  End packet + EOW
+
+
+TIME: 141875(us)  PERIOD: 35
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 141910(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       444    Digital receiver ADC
+DAT       610      Start of acquisition
+DVC       201  End packet + EOW
+
+
+TIME: 141914(us)  PERIOD: 540
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 142454(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       410    Offset freq (OMEGA) reg
+DAT       600      DATA BYTE 2 (0x 0)  (=0)
+DAT       600      DATA BYTE 1 (0x 0)  (=0)
+DAT       600      DATA BYTE 0 (0x 0)  (=0)
+OPC       406    THETA (phase) register
+DAT       62E      DATA BYTE 1 (0x17)  (=5888)
+DAT       700      DATA BYTE 0 (0x80)  (=128)
+OPC       416    Exctr unblank register
+DAT       680      Offset freq phase reset
+OPC       442    Digital filter select
+DAT       600      Digital filter 0
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+DVC       201  End packet + EOW
+
+
+TIME: 142471(us)  PERIOD: 35
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 142506(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       444    Digital receiver ADC
+DAT       610      Start of acquisition
+DVC       201  End packet + EOW
+
+
+TIME: 142510(us)  PERIOD: 540
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 143050(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       410    Offset freq (OMEGA) reg
+DAT       600      DATA BYTE 2 (0x 0)  (=0)
+DAT       600      DATA BYTE 1 (0x 0)  (=0)
+DAT       600      DATA BYTE 0 (0x 0)  (=0)
+OPC       406    THETA (phase) register
+DAT       6E0      DATA BYTE 1 (0x70)  (=28672)
+DAT       6A0      DATA BYTE 0 (0x50)  (=80)
+OPC       416    Exctr unblank register
+DAT       680      Offset freq phase reset
+OPC       442    Digital filter select
+DAT       600      Digital filter 0
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+DVC       201  End packet + EOW
+
+
+TIME: 143067(us)  PERIOD: 35
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 143102(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       444    Digital receiver ADC
+DAT       610      Start of acquisition
+DVC       201  End packet + EOW
+
+
+TIME: 143106(us)  PERIOD: 540
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 143646(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       410    Offset freq (OMEGA) reg
+DAT       600      DATA BYTE 2 (0x 0)  (=0)
+DAT       600      DATA BYTE 1 (0x 0)  (=0)
+DAT       600      DATA BYTE 0 (0x 0)  (=0)
+OPC       406    THETA (phase) register
+DAT       696      DATA BYTE 1 (0x4B)  (=19200)
+DAT       700      DATA BYTE 0 (0x80)  (=128)
+OPC       416    Exctr unblank register
+DAT       680      Offset freq phase reset
+OPC       442    Digital filter select
+DAT       600      Digital filter 0
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+DVC       201  End packet + EOW
+
+
+TIME: 143663(us)  PERIOD: 35
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 143698(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       444    Digital receiver ADC
+DAT       610      Start of acquisition
+DVC       201  End packet + EOW
+
+
+TIME: 143702(us)  PERIOD: 540
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 144242(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       410    Offset freq (OMEGA) reg
+DAT       600      DATA BYTE 2 (0x 0)  (=0)
+DAT       600      DATA BYTE 1 (0x 0)  (=0)
+DAT       600      DATA BYTE 0 (0x 0)  (=0)
+OPC       406    THETA (phase) register
+DAT       748      DATA BYTE 1 (0xA4)  (=41984)
+DAT       680      DATA BYTE 0 (0x40)  (=64)
+OPC       416    Exctr unblank register
+DAT       680      Offset freq phase reset
+OPC       442    Digital filter select
+DAT       600      Digital filter 0
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+DVC       201  End packet + EOW
+
+
+TIME: 144259(us)  PERIOD: 35
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 144294(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       444    Digital receiver ADC
+DAT       610      Start of acquisition
+DVC       201  End packet + EOW
+
+
+TIME: 144298(us)  PERIOD: 540
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 144838(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       410    Offset freq (OMEGA) reg
+DAT       600      DATA BYTE 2 (0x 0)  (=0)
+DAT       600      DATA BYTE 1 (0x 0)  (=0)
+DAT       600      DATA BYTE 0 (0x 0)  (=0)
+OPC       406    THETA (phase) register
+DAT       6FE      DATA BYTE 1 (0x7F)  (=32512)
+DAT       6E0      DATA BYTE 0 (0x70)  (=112)
+OPC       416    Exctr unblank register
+DAT       680      Offset freq phase reset
+OPC       442    Digital filter select
+DAT       600      Digital filter 0
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+DVC       201  End packet + EOW
+
+
+TIME: 144855(us)  PERIOD: 35
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 144890(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       444    Digital receiver ADC
+DAT       610      Start of acquisition
+DVC       201  End packet + EOW
+
+
+TIME: 144894(us)  PERIOD: 540
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 145434(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       410    Offset freq (OMEGA) reg
+DAT       600      DATA BYTE 2 (0x 0)  (=0)
+DAT       600      DATA BYTE 1 (0x 0)  (=0)
+DAT       600      DATA BYTE 0 (0x 0)  (=0)
+OPC       406    THETA (phase) register
+DAT       7B0      DATA BYTE 1 (0xD8)  (=55296)
+DAT       680      DATA BYTE 0 (0x40)  (=64)
+OPC       416    Exctr unblank register
+DAT       680      Offset freq phase reset
+OPC       442    Digital filter select
+DAT       600      Digital filter 0
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+DVC       201  End packet + EOW
+
+
+TIME: 145451(us)  PERIOD: 35
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 145486(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       444    Digital receiver ADC
+DAT       610      Start of acquisition
+DVC       201  End packet + EOW
+
+
+TIME: 145490(us)  PERIOD: 540
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 146030(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       410    Offset freq (OMEGA) reg
+DAT       600      DATA BYTE 2 (0x 0)  (=0)
+DAT       600      DATA BYTE 1 (0x 0)  (=0)
+DAT       600      DATA BYTE 0 (0x 0)  (=0)
+OPC       406    THETA (phase) register
+DAT       766      DATA BYTE 1 (0xB3)  (=45824)
+DAT       6E0      DATA BYTE 0 (0x70)  (=112)
+OPC       416    Exctr unblank register
+DAT       680      Offset freq phase reset
+OPC       442    Digital filter select
+DAT       600      Digital filter 0
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+DVC       201  End packet + EOW
+
+
+TIME: 146047(us)  PERIOD: 35
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 146082(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       444    Digital receiver ADC
+DAT       610      Start of acquisition
+DVC       201  End packet + EOW
+
+
+TIME: 146086(us)  PERIOD: 540
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 146626(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       410    Offset freq (OMEGA) reg
+DAT       600      DATA BYTE 2 (0x 0)  (=0)
+DAT       600      DATA BYTE 1 (0x 0)  (=0)
+DAT       600      DATA BYTE 0 (0x 0)  (=0)
+OPC       406    THETA (phase) register
+DAT       618      DATA BYTE 1 (0x C)  (=3072)
+DAT       680      DATA BYTE 0 (0x40)  (=64)
+OPC       416    Exctr unblank register
+DAT       680      Offset freq phase reset
+OPC       442    Digital filter select
+DAT       600      Digital filter 0
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+DVC       201  End packet + EOW
+
+
+TIME: 146643(us)  PERIOD: 35
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 146678(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       444    Digital receiver ADC
+DAT       610      Start of acquisition
+DVC       201  End packet + EOW
+
+
+TIME: 146682(us)  PERIOD: 540
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 147222(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       410    Offset freq (OMEGA) reg
+DAT       600      DATA BYTE 2 (0x 0)  (=0)
+DAT       600      DATA BYTE 1 (0x 0)  (=0)
+DAT       600      DATA BYTE 0 (0x 0)  (=0)
+OPC       406    THETA (phase) register
+DAT       7CE      DATA BYTE 1 (0xE7)  (=59136)
+DAT       6E0      DATA BYTE 0 (0x70)  (=112)
+OPC       416    Exctr unblank register
+DAT       680      Offset freq phase reset
+OPC       442    Digital filter select
+DAT       600      Digital filter 0
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+DVC       201  End packet + EOW
+
+
+TIME: 147239(us)  PERIOD: 35
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 147274(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       444    Digital receiver ADC
+DAT       610      Start of acquisition
+DVC       201  End packet + EOW
+
+
+TIME: 147278(us)  PERIOD: 540
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 147818(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       410    Offset freq (OMEGA) reg
+DAT       600      DATA BYTE 2 (0x 0)  (=0)
+DAT       600      DATA BYTE 1 (0x 0)  (=0)
+DAT       600      DATA BYTE 0 (0x 0)  (=0)
+OPC       406    THETA (phase) register
+DAT       680      DATA BYTE 1 (0x40)  (=16384)
+DAT       660      DATA BYTE 0 (0x30)  (=48)
+OPC       416    Exctr unblank register
+DAT       680      Offset freq phase reset
+OPC       442    Digital filter select
+DAT       600      Digital filter 0
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+DVC       201  End packet + EOW
+
+
+TIME: 147835(us)  PERIOD: 35
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 147870(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       444    Digital receiver ADC
+DAT       610      Start of acquisition
+DVC       201  End packet + EOW
+
+
+TIME: 147874(us)  PERIOD: 540
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 148414(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       410    Offset freq (OMEGA) reg
+DAT       600      DATA BYTE 2 (0x 0)  (=0)
+DAT       600      DATA BYTE 1 (0x 0)  (=0)
+DAT       600      DATA BYTE 0 (0x 0)  (=0)
+OPC       406    THETA (phase) register
+DAT       636      DATA BYTE 1 (0x1B)  (=6912)
+DAT       6C0      DATA BYTE 0 (0x60)  (=96)
+OPC       416    Exctr unblank register
+DAT       680      Offset freq phase reset
+OPC       442    Digital filter select
+DAT       600      Digital filter 0
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+NOP         0      NOP BYTE (0x 0)  
+DVC       201  End packet + EOW
+
+
+TIME: 148431(us)  PERIOD: 35
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 148466(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       444    Digital receiver ADC
+DAT       610      Start of acquisition
+DVC       201  End packet + EOW
+
+
+TIME: 148470(us)  PERIOD: 508
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 148978(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       210  Master Exc/Rec
+OPC       5FE    DABOUT register
+DAT       600      DATA BYTE 0 (0x 0)  (=0)
+DVC       201  End packet + EOW
+
+
+TIME: 148982(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       200  End packet
+OPC       416    Exctr unblank register
+DAT       600          DATA BYTE 0
+DVC       200  End packet
+OPC       40A    Center Freq DDS reg
+DVC       201  End packet + EOW
+
+
+TIME: 148988(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 148989(us)  PERIOD: 398
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 149387(us)  PERIOD: 2
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)   + EOW
+
+
+TIME: 149389(us)  PERIOD: 1
+INST:        0  No control bits
+-------------------------------------------
+DVC       202  DAB or CAP Device
+OPC       400    DPASS
+DAT       608      DATA BYTE  1 (0x 4)  
+DAT       600      DATA BYTE  2 (0x 0)  
+DVC       202  DAB or CAP Device
+DVC       200  End packet
+DVC       201  End packet + EOW
+
+
+TIME: 149396(us)  PERIOD: 417
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)  End packet + EOW
+
+
+TIME: 149813(us)  PERIOD: 3848988
+INST:        0  No control bits
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)  End packet + EOW
+
+
+TIME: 3998801(us)  PERIOD: 1
+INST: 80000000  EOS
+-------------------------------------------
+NOP         1      NOP BYTE (0x 0)  End packet + EOW
