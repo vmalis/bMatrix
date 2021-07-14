@@ -7,12 +7,12 @@ function b = b_matrix(Gradients)
 
 %--------------------------------------------------------------------------
 %% INPUT
-res   = 34;
-gamma = 1;
+res   = 35;
+gamma = 2*pi*(42.56);
 gsq   = gamma^2;
 
 % gradients
-Gdr  = Gradients.Gdr;
+Gdr  = Gradients.Gdr;       
 Gcr  = Gradients.Gcr;
 Grdp = Gradients.Grdp;
 Gro  = Gradients.Gro;
@@ -27,34 +27,34 @@ Gsl2 = Gradients.Gsl2;
 Grf  = Gradients.Grf;
 
 % t
-TE   = Gradients.TE;
-t21  = Gradients.t21;
-t22  = Gradients.t22;
-t31  = Gradients.t31;
-t32  = Gradients.t32;
-t41  = Gradients.t41;
-t42  = Gradients.t42;
-t5rp = Gradients.t5rp;
-t5s  = Gradients.t5s;
-t71  = Gradients.t71;
+TE   = Gradients.TE*1E-6;
+t21  = Gradients.t21*1E-6;
+t22  = Gradients.t22*1E-6;
+t31  = Gradients.t31*1E-6;
+t32  = Gradients.t32*1E-6;
+t41  = Gradients.t41*1E-6;
+t42  = Gradients.t42*1E-6;
+t5rp = Gradients.t5rp*1E-6;
+t5s  = Gradients.t5s*1E-6;
+t71  = Gradients.t71*1E-6;
 
 % delta
-d1   =  Gradients.d1;
-d2   =  Gradients.d2;
-d3   =  Gradients.d3;
-d4   =  Gradients.d4;
-d5rp =  Gradients.d5rp;
-d5s  =  Gradients.d5s;
-d7   =  Gradients.d7;
+d1   =  Gradients.d1*1E-6;
+d2   =  Gradients.d2*1E-6;
+d3   =  Gradients.d3*1E-6;
+d4   =  Gradients.d4*1E-6;
+d5rp =  Gradients.d5rp*1E-6;
+d5s  =  Gradients.d5s*1E-6;
+d7   =  Gradients.d7*1E-6;
 
 % eps
-eps2   =  Gradients.eps2;
-eps3   =  Gradients.eps3;
-eps4   =  Gradients.eps4;
-eps5rp =  Gradients.eps5rp;
-eps5s  =  Gradients.eps5s;
-eps6   =  Gradients.eps6;
-eps7   =  Gradients.eps7;
+eps2   =  Gradients.eps2*1E-6;
+eps3   =  Gradients.eps3*1E-6;
+eps4   =  Gradients.eps4*1E-6;
+eps5rp =  Gradients.eps5rp*1E-6;
+eps5s  =  Gradients.eps5s*1E-6;
+eps6   =  Gradients.eps6*1E-6;
+eps7   =  Gradients.eps7*1E-6;
 
 %--------------------------------------------------------------------------
 %% TIMING
@@ -79,10 +79,10 @@ tau34       =   d3*d4*D4;
 tau35s      =   d5s*d3*D3/2;
 tau44       =   d4^2*(D4-d4/3)+eps4^3;
 tau45s      =   d5s*d4*D4/2;
-tau55rp     =   d5rp^2*(D5rp-d5rp/3)+eps5rp^3/30-d5*eps5rp^2/6;
-tau55s      =   d5s^2*(D5s-d5s/3)+eps5s^3/30-d5*eps5s^2/6;
-tau5rp71    =   d5rp*(d7(D75-d7/4)+eps7^2/12-d7*eps7/2);
-tau5s71     =   d5s*(d7(D75-d7/4)+eps7^2/12-d7*eps7/2);
+tau55rp     =   d5rp^2*(D5rp-d5rp/3)+eps5rp^3/30-d5rp*eps5rp^2/6;
+tau55s      =   d5s^2*(D5s-d5s/3)+eps5s^3/30-d5s*eps5s^2/6;
+tau5rp71    =   d5rp*(d7*(D75-d7/4)+eps7^2/12-d7*eps7/2);
+tau5s71     =   d5s*(d7*(D75-d7/4)+eps7^2/12-d7*eps7/2);
 tau6m71     =   eps6/4*(d7*D71-eps7^2/60);
 tau7171     =   1/4*(d7^2*(D71-d7/3)+eps7^3/30-d7^2*eps7/2);
 tau7m7mplus =   (res/2-1)*(d7^3/12+eps7/60+d7^2*eps7/4-d7*eps7^2/12); 
@@ -118,19 +118,18 @@ bss = gsq*(14/3*Gsl^2*tau11+Gds^2*tau22+2*Gds*Gcs*tau23+Gds*Gsl2*tau24+...
     Gsl2*tau44/4+Gsl2*Grf*tau45s+Grf^2*tau55s/4);
 
 % off-diagonal terms
-brp = gsq*(Gdr*Gsl*tau12+Gcr*Gsl*tau22+(Gdr*Gcp+Gcr*Gdp)*tau23+...
-    Gcr*Gcp*tau33+Grdp*Gpdp*tau55rp+Grdp*Gpe*tau5rp6m+Gro*Gpdp*tau5rp71+...
-    Gpe*Gro*tau6m71);
+brp = gsq*(Gdr*Gdp*tau22+(Gdr*Gcp+Gcr*Gdp)*tau23+Gcr*Gcp*tau33+Grdp*Gpdp*tau55rp+...
+    +Grdp*Gpe*tau5rp6m+Gro*Gpdp*tau5rp71+Gpe*Gro*tau6m71);
 bpr = brp;
 
-brs = gsq*((Gdr*Gcs+Gcr*Gds)*tau23+Gdr*Gsl2*tau24+Gdr*Grf*tau25s+...
-    Gcr*Gcs*tau33+Gcr*Gsl2*tau34/2+Gcr*Grf*tau35s/2+Grdp*Grf*tau55rp/2+...
-    Gro*Grf*tau5s71/2);
+brs = gsq*((Gdr*Gcs+Gcr*Gds)*tau23+1/2*Gdr*Gsl2*tau24+1/2*Gdr*Grf*tau25s+...
+    Gcr*Gcs*tau33+Gcr*1/2*Gsl2*tau34+1/2*Gcr*Grf*tau35s+1/2*Grdp*Grf*tau55rp+...
+    1/2*Gro*Grf*tau5s71);
 bsr = brs;
 
-bsp = gsq*(Gdp*Gds*tau22+(Gds*Gcp+Gds*Gcp)*tau23+Gdp*Gsl2*tau24/2+...
-    Gdp*Grf*tau25s+Gcp*Gcs*tau33+Gcp*Gsl2*tau34+Gcp*Grf*tau35/2+...
-    Gpdp*Grf*tau55rp/2+Gpe*Grf*tau5s6m/2);
+bsp = gsq*(Gdp*Gds*tau22+(Gds*Gcp+Gdp*Gcs)*tau23+1/2*Gdp*Gsl2*tau24+...
+    1/2*Gdp*Grf*tau25s+Gcp*Gcs*tau33+1/2*Gcp*Gsl2*tau34+1/2*Gcp*Grf*tau35s+...
+    1/2*Gpdp*Grf*tau55rp+1/2*Gpe*Grf*tau5s6m);
 bps = bsp;
 
 % matrix
