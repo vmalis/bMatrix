@@ -12,19 +12,19 @@ gamma = 2*pi*(42.56);
 gsq   = gamma^2;
 
 % gradients
-Gdr  = Gradients.Gdr;       
-Gcr  = Gradients.Gcr;
-Grdp = Gradients.Grdp;
-Gro  = Gradients.Gro;
-Gdp  = Gradients.Gdp;
-Gcp  = Gradients.Gcp;
-Gpdp = Gradients.Gpdp;
-Gpe  = Gradients.Gpe;
-Gsl  = Gradients.Gsl;
-Gds  = Gradients.Gds;
-Gcs  = Gradients.Gcs;
-Gsl2 = Gradients.Gsl2;
-Grf  = Gradients.Grf;
+Gdr  = Gradients.Gdr*10;       
+Gcr  = Gradients.Gcr*10;
+Grdp = Gradients.Grdp*10;
+Gro  = Gradients.Gro*10;
+Gdp  = Gradients.Gdp*10;
+Gcp  = Gradients.Gcp*10;
+Gpdp = Gradients.Gpdp*10;
+Gpe  = Gradients.Gpe*10;
+Gsl  = Gradients.Gsl*10;
+Gds  = Gradients.Gds*10;
+Gcs  = Gradients.Gcs*10;
+Gsl2 = Gradients.Gsl2*10;
+Grf  = Gradients.Grf*10;
 
 % t
 TE   = Gradients.TE*1E-6;
