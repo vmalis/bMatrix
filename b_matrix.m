@@ -3,28 +3,42 @@
 %==========================================================================
 %   06/2021 - VM (vmalis@ucsd.edu)   
 %==========================================================================
-function b = b_matrix(Gradients)
+function [b,D2] = b_matrix(Gradients)
+
+
+%  b-values common units are [s/mm^2]
+%  GE gives:
+%       time        [us]
+%       gradients   [G/cm]
+
+%  Conversion factors:
+%       time        -> [us]        = 1E-6 [s]               =>   1E-6
+%       gradients   -> [G/cm]      = 1E-4 [T] / 1E1 [mm]    =>   1E-5
+%       gamma       -> [2pi*MHz/T] = 2pi*1E6/(T*s)          =>   2*pi*1E6
+
 
 %--------------------------------------------------------------------------
 %% INPUT
 res   = 35;
-gamma = 2*pi*(42.56);
+gamma = 2*pi*1E6*42.577478518;
 gsq   = gamma^2;
 
-% gradients
-Gdr  = Gradients.Gdr*10;       
-Gcr  = Gradients.Gcr*10;
-Grdp = Gradients.Grdp*10;
-Gro  = Gradients.Gro*10;
-Gdp  = Gradients.Gdp*10;
-Gcp  = Gradients.Gcp*10;
-Gpdp = Gradients.Gpdp*10;
-Gpe  = Gradients.Gpe*10;
-Gsl  = Gradients.Gsl*10;
-Gds  = Gradients.Gds*10;
-Gcs  = Gradients.Gcs*10;
-Gsl2 = Gradients.Gsl2*10;
-Grf  = Gradients.Grf*10;
+
+
+% gradients  [G/cm] = 1E-4 T / 1E-2 m = 1E-2 T/m = 
+Gdr  = Gradients.Gdr*1E-5;       
+Gcr  = Gradients.Gcr*1E-5;
+Grdp = Gradients.Grdp*1E-5;
+Gro  = Gradients.Gro*1E-5;
+Gdp  = Gradients.Gdp*1E-5;
+Gcp  = Gradients.Gcp*1E-5;
+Gpdp = Gradients.Gpdp*1E-5;
+Gpe  = Gradients.Gpe*1E-5;
+Gsl  = Gradients.Gsl*1E-5;
+Gds  = Gradients.Gds*1E-5;
+Gcs  = Gradients.Gcs*1E-5;
+Gsl2 = Gradients.Gsl2*1E-5;
+Grf  = Gradients.Grf*1E-5;
 
 % t
 TE   = Gradients.TE*1E-6;
@@ -46,6 +60,7 @@ d4   =  Gradients.d4*1E-6;
 d5rp =  Gradients.d5rp*1E-6;
 d5s  =  Gradients.d5s*1E-6;
 d7   =  Gradients.d7*1E-6;
+%d_sl = 3200*1E-6;% slice select
 
 % eps
 eps2   =  Gradients.eps2*1E-6;
@@ -74,11 +89,14 @@ tau22       =   d2^2*(D2-d2/3)+eps2^3/30-d2*eps2^2/6;
 tau23       =   d2*d3*D3;
 tau24       =   d2*d4*D4;
 tau25s      =   d5s*d2*D2/2;
+tau25rp     =   d5rp*d2*D2/2;
 tau33       =   d3^2*(D3-d3/3)+eps3^3/30-d3*eps3^2/6;
 tau34       =   d3*d4*D4;
 tau35s      =   d5s*d3*D3/2;
-tau44       =   d4^2*(D4-d4/3)+eps4^3;
+tau35rp     =   d5rp*d3*D3/2;
+tau44       =   d4^2*(D4-d4/3)+eps4^3/30-1/6*d4*eps4^2;
 tau45s      =   d5s*d4*D4/2;
+tau45rp     =   d5rp*d4*D4/2;
 tau55rp     =   d5rp^2*(D5rp-d5rp/3)+eps5rp^3/30-d5rp*eps5rp^2/6;
 tau55s      =   d5s^2*(D5s-d5s/3)+eps5s^3/30-d5s*eps5s^2/6;
 tau5rp71    =   d5rp*(d7*(D75-d7/4)+eps7^2/12-d7*eps7/2);
@@ -114,7 +132,7 @@ bpp = gsq*(Gdp^2*tau22+2*Gdp*Gcp*tau23+Gcp^2*tau33+Gpdp^2*tau55rp+...
     2*Gpdp*Gpe*tau5rp6m+Gpe^2*tau6m6m);
 
 bss = gsq*(14/3*Gsl^2*tau11+Gds^2*tau22+2*Gds*Gcs*tau23+Gds*Gsl2*tau24+...
-    Gds*Grf*tau25s+Gcs^2*tau33+Gcs*Gsl'*tau34+2*Gcs*Grf*tau35s+...
+    Gds*Grf*tau25s+Gcs^2*tau33+Gcs*Gsl2*tau34+2*Gcs*Grf*tau35s+...
     Gsl2*tau44/4+Gsl2*Grf*tau45s+Grf^2*tau55s/4);
 
 % off-diagonal terms

@@ -1,4 +1,4 @@
-%GE xml plot
+%GE xml to b_matrix
 
 % read all captures
 list=dir("*.xml*");
@@ -42,30 +42,30 @@ end
 close(f)
 
 
-%% plots
-
-N=1;
-
-figure
-
-subplot(3,1,1)
-plot(GradData(N).xTime,GradData(N).xAmp,'r-')
-hold on
-plot(GradData(N).xt,GradData(N).xAp,'b*')
-hold off
-
-subplot(3,1,2)
-plot(GradData(N).yTime,GradData(N).yAmp,'r-')
-hold on
-plot(GradData(N).yt,GradData(N).yAp,'b*')
-hold off
-
-subplot(3,1,3)
-plot(GradData(N).zTime,GradData(N).zAmp,'r-')
-hold on
-plot(GradData(N).zt,GradData(N).zAp,'b*')
-hold off
-
+% %% plots
+% 
+% N=1;
+% 
+% figure
+% 
+% subplot(3,1,1)
+% plot(GradData(N).xTime,GradData(N).xAmp,'r-')
+% hold on
+% plot(GradData(N).xt,GradData(N).xAp,'b*')
+% hold off
+% 
+% subplot(3,1,2)
+% plot(GradData(N).yTime,GradData(N).yAmp,'r-')
+% hold on
+% plot(GradData(N).yt,GradData(N).yAp,'b*')
+% hold off
+% 
+% subplot(3,1,3)
+% plot(GradData(N).zTime,GradData(N).zAmp,'r-')
+% hold on
+% plot(GradData(N).zt,GradData(N).zAp,'b*')
+% hold off
+% 
 
 
 %% get parameters and save to structure
@@ -133,8 +133,6 @@ for n=1:size(GradData,2)
     % t
     
     % same for all
-    Gradients(n).TE = (GradData(n).xt(end-71)-(GradData(n).xt(end-71) - ...
-    GradData(n).xt(end-72))/2) - (GradData(n).zt(60)-GradData(n).zt(1))/2;
     Gradients(n).t5s  = GradData(n).zt(57); 
     Gradients(n).d1   =  GradData(n).zt(3)-GradData(n).zt(1);
     Gradients(n).d5s  =  GradData(n).zt(59)-GradData(n).zt(57);
@@ -161,6 +159,11 @@ for n=1:size(GradData,2)
         Gradients(n).d5rp =  GradData(n).xt(23)-GradData(n).xt(21);
         Gradients(n).eps3   =  GradData(n).xt(6)-GradData(n).xt(5);
         Gradients(n).eps5rp =  GradData(n).xt(22)-GradData(n).xt(21);
+        
+        Gradients(n).TE = (GradData(n).xt(end-71)-(GradData(n).xt(end-71) - ...
+        GradData(n).xt(end-72))/2) - (GradData(n).zt(60)-GradData(n).zt(1))/2 ...
+        -(GradData(n).xt(13)-GradData(n).xt(5))+4*Gradients(n).eps3+2*Gradients(n).d3;
+        
     else
         Gradients(n).t21  = 0;
         Gradients(n).t22  = 0;
@@ -176,6 +179,10 @@ for n=1:size(GradData,2)
         Gradients(n).d5rp = GradData(n).xt(15)-GradData(n).xt(13);
         Gradients(n).eps3 = GradData(n).xt(2)-GradData(n).xt(1);
         Gradients(n).eps5rp = GradData(n).xt(14)-GradData(n).xt(13);
+        
+        Gradients(n).TE = (GradData(n).xt(end-71)-(GradData(n).xt(end-71) - ...
+        GradData(n).xt(end-72))/2) - (GradData(n).zt(60)-GradData(n).zt(1))/2 ...
+        -(GradData(n).xt(9)-GradData(n).xt(1))+4*Gradients(n).eps3+2*Gradients(n).d3;
     end
     
     
@@ -185,10 +192,16 @@ for n=1:size(GradData,2)
         Gradients(n).t42  = GradData(n).zt(end-10);
     end
     
+    
 end
 
 b = zeros(3,3,size(GradData,2));
+d = zeros(size(GradData,2));
 
 for n=1:size(GradData,2)
-     b(:,:,n)= b_matrix(Gradients(n));
+     [b(:,:,n),d(n)]= b_matrix(Gradients(n));
 end
+
+D=unique(d);
+D(1)=[]; % Capital delta == 0 for zero diffusion
+B=reshape(b,[3,3,7,size(D,1)]);
