@@ -20,7 +20,7 @@ function [b,D2] = b_matrix(Gradients)
 %--------------------------------------------------------------------------
 %% INPUT
 res   = 35;
-gamma = 2*pi*1E6*42.577478518;
+gamma = 2*pi*42.577478518*1E6;
 gsq   = gamma^2;
 
 
@@ -103,7 +103,7 @@ tau5rp71    =   d5rp*(d7*(D75-d7/4)+eps7^2/12-d7*eps7/2);
 tau5s71     =   d5s*(d7*(D75-d7/4)+eps7^2/12-d7*eps7/2);
 tau6m71     =   eps6/4*(d7*D71-eps7^2/60);
 tau7171     =   1/4*(d7^2*(D71-d7/3)+eps7^3/30-d7^2*eps7/2);
-tau7m7mplus =   (res/2-1)*(d7^3/12+eps7/60+d7^2*eps7/4-d7*eps7^2/12); 
+tau7m7mplus =   (res/2-1)*(d7^3/12+eps7^3/60+d7^2*eps7/4-d7*eps7^2/12);
 
 % taus with summation
 tau5rp6m = 0;
@@ -112,7 +112,7 @@ tau6m6m  = 0;
 
 for m=1:res/2  
     
-    t6i =   Gradients.t6(m);
+    t6i =   Gradients.t6(m)*1E-6;
     D6m =   TE  - t6i;
     
     tau5rp6m = tau5rp6m + eps5rp*d5rp*(D6m-eps6);
@@ -125,15 +125,18 @@ end
 %% b-matrix terms
 
 % diagonal terms
+
 brr = gsq*(Gdr^2*tau22+2*Gdr*Gcr*tau23+Gcr^2*tau33+Grdp^2*tau55rp+...
     2*Grdp*Gro*tau5rp71+Gro^2*(tau7171+tau7m7mplus));
 
 bpp = gsq*(Gdp^2*tau22+2*Gdp*Gcp*tau23+Gcp^2*tau33+Gpdp^2*tau55rp+...
     2*Gpdp*Gpe*tau5rp6m+Gpe^2*tau6m6m);
 
+
+
 bss = gsq*(14/3*Gsl^2*tau11+Gds^2*tau22+2*Gds*Gcs*tau23+Gds*Gsl2*tau24+...
     Gds*Grf*tau25s+Gcs^2*tau33+Gcs*Gsl2*tau34+2*Gcs*Grf*tau35s+...
-    Gsl2*tau44/4+Gsl2*Grf*tau45s+Grf^2*tau55s/4);
+    Gsl2^2*tau44/4+Gsl2*Grf*tau45s+Grf^2*tau55s/4);
 
 % off-diagonal terms
 brp = gsq*(Gdr*Gdp*tau22+(Gdr*Gcp+Gcr*Gdp)*tau23+Gcr*Gcp*tau33+Grdp*Gpdp*tau55rp+...

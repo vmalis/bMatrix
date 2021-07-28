@@ -42,16 +42,16 @@ end
 close(f)
 
 
-% %% plots
-% 
-% N=1;
-% 
-% figure
-% 
-% subplot(3,1,1)
-% plot(GradData(N).xTime,GradData(N).xAmp,'r-')
-% hold on
-% plot(GradData(N).xt,GradData(N).xAp,'b*')
+%% plots
+
+N=1;
+
+figure
+
+subplot(3,1,1)
+plot(GradData(N).xTime,GradData(N).xAmp,'r-')
+hold on
+plot(GradData(N).xt,GradData(N).xAp,'b*')
 % hold off
 % 
 % subplot(3,1,2)
@@ -147,7 +147,7 @@ for n=1:size(GradData,2)
     if size(GradData(n).xAp,1)>160  %with diffusion
         Gradients(n).t21  = GradData(n).xt(1);
         Gradients(n).t22  = GradData(n).xt(17); 
-        Gradients(n).eps2   =  GradData(n).xt(3)-GradData(n).xt(1);
+        Gradients(n).eps2   =  GradData(n).xt(2)-GradData(n).xt(1);
         Gradients(n).t31  = GradData(n).xt(5);
         Gradients(n).t32  = GradData(n).xt(13);
         Gradients(n).t41  = GradData(n).xt(8);
@@ -196,7 +196,7 @@ for n=1:size(GradData,2)
 end
 
 b = zeros(3,3,size(GradData,2));
-d = zeros(size(GradData,2));
+d = zeros(size(GradData,2),1);
 
 for n=1:size(GradData,2)
      [b(:,:,n),d(n)]= b_matrix(Gradients(n));
@@ -205,3 +205,4 @@ end
 D=unique(d);
 D(1)=[]; % Capital delta == 0 for zero diffusion
 B=reshape(b,[3,3,7,size(D,1)]);
+Delta = D*1000;
