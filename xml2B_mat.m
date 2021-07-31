@@ -1,4 +1,25 @@
-%GE xml to b_matrix
+% GE xml to b_matrix
+%==========================================================================
+% smain scrip
+% 
+%   input:  GE xml file
+%
+%   output: b-matrix
+%           gradient plots
+%
+%   run from the directory with gradeints XML files
+%
+%==========================================================================
+% 06/2021 - VM (vmalis@ucsd.edu)   
+%==========================================================================
+
+% plots:
+plotsON = true;
+directionNumber = 4;
+
+%==========================================================================
+
+
 
 % read all captures
 list=dir("*.xml*");
@@ -44,28 +65,41 @@ close(f)
 
 %% plots
 
-N=1;
+if plotsON
+    N=directionNumber;
+    figure
 
-figure
+    subplot(3,1,1)
+    plot(GradData(N).xTime,GradData(N).xAmp,'r-')
+    ylabel('$\mathrm{Readout} \, [\mathrm{G/cm}]$','Interpreter','latex')
+    xlabel('$\mathrm{time} \, [\mu s]$','Interpreter','latex')
+    set(gca,'TickLabelInterpreter','latex')
+    ylim([-5,5])
+    hold on
+    plot(GradData(N).xt,GradData(N).xAp,'b.')
+    hold off
+    subplot(3,1,2)
+    plot(GradData(N).yTime,GradData(N).yAmp,'r-')
+    ylabel('$\mathrm{Phase}$-$\mathrm{encoding} \, [\mathrm{G/cm}]$','Interpreter','latex')
+    xlabel('$\mathrm{time} \, [\mu s]$','Interpreter','latex')
+    set(gca,'TickLabelInterpreter','latex')
+    ylim([-5,5])
+    hold on
+    plot(GradData(N).yt,GradData(N).yAp,'b.')
+    hold off
+    subplot(3,1,3)
+    plot(GradData(N).zTime,GradData(N).zAmp,'r-')
+    ylabel('$\mathrm{Slice}$-$\mathrm{select} \, [\mathrm{G/cm}]$','Interpreter','latex')
+    xlabel('$\mathrm{time} \, [\mu s]$','Interpreter','latex')
+    set(gca,'TickLabelInterpreter','latex')
+    ylim([-5,5])
+    hold on
+    plot(GradData(N).zt,GradData(N).zAp,'b.')
+    hold off
 
-subplot(3,1,1)
-plot(GradData(N).xTime,GradData(N).xAmp,'r-')
-hold on
-plot(GradData(N).xt,GradData(N).xAp,'b*')
-% hold off
-% 
-% subplot(3,1,2)
-% plot(GradData(N).yTime,GradData(N).yAmp,'r-')
-% hold on
-% plot(GradData(N).yt,GradData(N).yAp,'b*')
-% hold off
-% 
-% subplot(3,1,3)
-% plot(GradData(N).zTime,GradData(N).zAmp,'r-')
-% hold on
-% plot(GradData(N).zt,GradData(N).zAp,'b*')
-% hold off
-% 
+    set(gcf,'color','white')
+    export_fig('gradientWaveforms','-pdf','-nocrop','-opengl') 
+end
 
 
 %% get parameters and save to structure
