@@ -3,7 +3,7 @@
 [![DOI](https://zenodo.org/badge/168613292.svg)](https://zenodo.org/badge/latestdoi/168613292)
 
 <p align="center">
-  <img width="465" height="250" src=/preview/gradientWaveforms.png>
+  <img width="930" height="500" src=/preview/gradientWaveforms.png>
 </p>
 
 
