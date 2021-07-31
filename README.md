@@ -10,11 +10,5 @@
 The set of codes to calculate full form of the b-matrix for the DTI-EPI stimulated echo sequence.  
 A set of gradient waveforsm .xml files is provide for the test run.
 
-
-![Alt text](gradientWaveforms.png?raw=true "")
-
-
 Based on the paper:
 - [Mattiello J, Basser PJ, Le Bihan D. The b matrix in diffusion tensor echo-planar imaging. Magn Reson Med. 1997 Feb;37(2):292-300.](https://pubmed.ncbi.nlm.nih.gov/9001155/)
-
-
