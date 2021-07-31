@@ -1,6 +1,6 @@
 # bMatrix - full form for Stimulated echo EPI sequence
 
-[![DOI](https://zenodo.org/badge/168613292.svg)](https://zenodo.org/badge/latestdoi/168613292)
+[![DOI](https://zenodo.org/badge/373911945.svg)](https://zenodo.org/badge/latestdoi/373911945)
 
 <p align="center">
   <img width="930" height="500" src=/preview/gradientWaveforms.png>
